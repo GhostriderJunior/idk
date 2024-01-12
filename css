@@ -1,4 +1,29 @@
-﻿@font-face {
+﻿body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container {
+  transition: transform 0.2s ease-in-out;
+}
+
+.et_pb_image_wrap {
+  position: relative;
+}
+
+.et_pb_image_wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+@font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 300;
